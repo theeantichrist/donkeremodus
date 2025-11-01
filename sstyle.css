@@ -1,0 +1,62 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff33be, #ff33c9);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.851);
+}
+
+/* Result paragraph */
+#resultaat {
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.269);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.542);
+  backdrop-filter: blur(5px);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 3;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive text scaling */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #resultaat {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
